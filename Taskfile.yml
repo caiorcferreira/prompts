@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  sync:
+    desc: Sync the pattern folder with Fabric patterns
+    cmds:
+      - rsync -av --delete pattern/ ~/.config/fabric/patterns/
