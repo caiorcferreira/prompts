@@ -1,7 +1,9 @@
-version: '3'
+version: "3"
 
 tasks:
   sync:
     desc: Sync the pattern folder with Fabric patterns
     cmds:
-      - rsync -av --delete pattern/ ~/.config/fabric/patterns/
+      - mkdir -p ~/.config/fabric/patterns/
+      - ls patterns | sed -e 's/\..*$//' | xargs -I {} mkdir -p ~/.config/fabric/patterns/{}
+      - ls patterns | sed -e 's/\..*$//' | xargs -I {} cp -r patterns/{}.md ~/.config/fabric/patterns/{}/system.md
