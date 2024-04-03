@@ -1,6 +1,6 @@
 # LLM Prompts Collection
 
-This repository is a collection of LLM prompts. It includes a Taskfile for syncing the `pattern` folder with `~/.config/fabric/patterns/`, which allows them to be used with [Fabric](https://github.com/danielmiessler/fabric/tree/main).
+This repository is a collection of LLM prompts. It includes a Taskfile for syncing the `patterns` folder with `~/.config/fabric/patterns/`, which allows them to be used with [Fabric](https://github.com/danielmiessler/fabric/tree/main).
 
 ## Prerequisites
 
