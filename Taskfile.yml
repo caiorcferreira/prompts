@@ -7,3 +7,9 @@ tasks:
       - mkdir -p ~/.config/fabric/patterns/
       - ls patterns | sed -e 's/\..*$//' | xargs -I {} mkdir -p ~/.config/fabric/patterns/{}
       - ls patterns | sed -e 's/\..*$//' | xargs -I {} cp -r patterns/{}.md ~/.config/fabric/patterns/{}/system.md
+
+  vendor:
+    desc: Vendor dependencies
+    cmds:
+      - go mod tidy
+      - go mod vendor
